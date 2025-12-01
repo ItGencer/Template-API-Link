@@ -1,0 +1,63 @@
+@import 'mixin.scss';
+$fontFamilyVarta: "Varta", sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontFamilyVarta;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+
+}
+
+img{
+    max-width: 100%
+}
+
+// HEADER STYLES
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;                // завжди по ширині
+    padding: 12px 20px;         // відступи всередині! а не ззовні
+    background-color: #444;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;     // центруємо внутрішній контейнер
+    
+    &__list {
+        display: grid;
+        width: 100%;
+        
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+#burger-menu{
+    display: none;
+    width: 70px;
+    cursor: pointer;
+}
+
+// END HEADER STYLES
+
+// MAIN STYLES
+
+// END MAIN STYLES
