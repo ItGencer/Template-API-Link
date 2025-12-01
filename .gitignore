@@ -1,1 +1,4 @@
+/node_modules
+
 *.css*
+firebase-debug.log
