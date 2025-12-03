@@ -285,3 +285,7 @@ async function getData() {
 addTest();
 getData();
 ```
+у html требо додати **type="module"** якщо використовуєте у скрипті import
+```
+<script type="module" src="src/script/firebase/firebase.js"></script>
+```
