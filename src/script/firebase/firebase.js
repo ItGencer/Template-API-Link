@@ -19,12 +19,13 @@ async function getData() {
   try {
     const querySnapshot = await getDocs(collection(db, "test"));
     querySnapshot.forEach((doc) => {
-      console.log(doc.id, " => ", doc.data());
+      console.log(doc.id, "=>", doc.data());
+
     });
   } catch (err) {
     console.error("Error:", err);
   }
 }
 
-addTest();
-getData();
+//addTest();
+//getData();
