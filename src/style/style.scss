@@ -31,7 +31,37 @@ img{
     z-index: 1000;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;     // центруємо внутрішній контейнер
+
+    &__main{
+        display: grid;
+        align-items: center;
+        margin: 20px;
+        
+        &__form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 100%;
+
+            label{
+                color: #fff;
+                cursor: pointer;
+            }
+            
+            &__title{
+                font-weight: 800;
+            }
+            &__text{
+                font-weight: 300;
+            }
+        }
+
+        &__menu{
+            cursor: pointer;
+        }
+    }
     
     &__list {
         display: grid;
@@ -48,12 +78,6 @@ img{
             text-transform: uppercase;
         }
     }
-}
-
-#burger-menu{
-    display: none;
-    width: 70px;
-    cursor: pointer;
 }
 
 // END HEADER STYLES
