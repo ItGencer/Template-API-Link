@@ -11,6 +11,17 @@
 </head>
 <body>
     <header class="header">
+        <div class="header__main">
+            <img src="src/image/logo-light.png" alt="logo" class="header__main__logo">
+            <form action="https://template-api-link-default-rtdb.europe-west1.firebasedatabase.app/" method="post" class="header__main__form">
+                <label for="title">Title</label>
+                <input type="text" class="header__main__form__title" id="title">
+                <label for="link">Link</label>
+                <input type="text" class="header__main__form__text" id="link">
+                <input type="submit" value="Відправити" id="submit" >
+            </form>
+            <img src="src/image/icon/burger menu open.png" alt="burger-menu" class="header__main__menu">
+        </div>
         <nav class="header__list">
             <a href="https://jsonexamples.com/?utm_source=chatgpt.com"
                target="_blank"
@@ -58,7 +69,6 @@
                picsum
             </a>
         </nav>
-        <img src="src/image/icon/burger menu open.png" alt="burger-menu" id="burger-menu">
     </header>
     <main>
     </main>
